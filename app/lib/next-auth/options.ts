@@ -9,7 +9,7 @@ export const nextAuthOptions: NextAuthOptions ={
         clientSecret: process.env.GITHUB_SECRET!
     }),
    ],
-   adapter:PrismaAdapter(prisma),
+//   adapter:PrismaAdapter(prisma),
    callbacks: {
     session:({session, user}) => {
         return {
